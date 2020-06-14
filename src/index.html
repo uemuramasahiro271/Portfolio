@@ -3,46 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <title>ポートフォリオ</title>
+
+    <script type="text/javascript">
+        $(function() {
+            $('#header').load('parts/header.html');
+            $('#main').load('parts/main.html');
+            $('#footer').load('parts/footer.html');
+        });
+    </script>
 </head>
 <body>
-    <header>
-        <div class="title">
-            <p>Masahiro Uemura's portfolio</p>
-        </div>
-        <div class="menu_bar">
-            <div class="menu">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#profile_area">Profile</a></li>
-                    <li><a href="#skill_area">Skill</a></li>
-                    <li><a href="#contact_area">Contact</a></li>
-                </ul>
-            </div>
-            <div class="icon_link">
-                <ul>
-                    <li><a href="#contact_area"><i class="fab fa-twitter"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
-    <div class="main_container">
-        <nav></nav>
-        <main>
-
-
-            <div id="profile_area">Profile</div>
-
-            <div id="skill_area">Skill</div>
-
-            <div id="contact_area">Contact</div>
-        </main>
-        <aside></aside>
-    </div>
-
-    
-    <footer></footer>
+    <div id="header"></div>
+    <div id="main" class="main_container"></div>
+    <div id="footer"></div>
 </body>
 </html>
